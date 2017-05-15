@@ -29,11 +29,11 @@ This repo contains a .c file. While the local emulator is agnostic to OS, GCP's 
 
    `Hello Neil STD_OUT: { "msg": "Hello from arbitrary C program!", "args": Hello Neil! } EXIT_CODE: 0!`
 
-## Building Locally in GCP Functions Emulator: 
+## Building for the actual GCP Functions environment : 
 
 NOTE - To be fully compliant with GCP's platform, as of May 2017, compile the native binary on Ubuntu 16.04 LTS (with updates) and/or it's Debain counterpart. Though untested, most other x86_64 Linux-es (latest LTS) may also generate compliant binaries.
 
-1. Compile the .c file on Ubuntu 16.04 x86_64 : `gcc -o test_func test_func.c`
+1. Compile the .c file on Ubuntu 16.04 x86_64 : `gcc -o test_func test_func.c` The attached binary in this repo is compliant with GCP's servers, in case your dev machine is a Winows or Mac.
 
 2. Deploy the .js funtion to GCP functions: 
 
