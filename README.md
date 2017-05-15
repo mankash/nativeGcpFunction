@@ -1,5 +1,7 @@
 # Google Cloud Function - Native C Demo
-The aim of this demo is: 
+Use this as a template to write a lambda/GCP function in a language of your choosing. The only requirement is for the native binary to be compliant with GCP's Function's environment of Debian Linux (latest LTS).
+
+Specific aim of this demo is to: 
 
 1. Parse json params from incoming http/s GCP request, and pass it to a native process (written in C)
 2. Echo back the params received from the native process, demostrating the ability to act on them.
